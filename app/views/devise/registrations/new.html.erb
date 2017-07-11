@@ -47,7 +47,7 @@
               <%= p.select :card_expires_year, options_for_select(Payment.year_options),
                                               { inclue_bank: 'Year' }, 
                                               data: { stripe:  "exp-year"}, 
-                                              class: "form-control", data: { stripe:  "exp-year" }, 
+                                              class: "form-control",
                                               required: true %>
             </div>
 
