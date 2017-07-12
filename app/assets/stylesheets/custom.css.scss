@@ -64,9 +64,32 @@
 }
 
 .features {
-	ul {
-		margin-left: 0;
-		padding-left: 15px;
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 10px;
+	list-style-type: none;
+	
+	.btn {
+		margin-top: 35px;
+		font-size: 25px;
+		padding: 25px !important;
+	}
+}
+
+.feature {
+	border-radius: 7.5px;
+	background-color: #e7e7e7;
+	padding: 50px;
+	margin-top: 10px;
+	color: #777;
+
+	p {
+		font-size: 20px;
+	}
+
+	i {
+		font-size: 60px;
+		margin: 10px;
 	}
 }
 

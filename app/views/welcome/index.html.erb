@@ -2,46 +2,38 @@
 	<h3>Welcome: <%= current_user.email %></h3>
 <% else %>
 
-<div class="jumbotron">
-	<h2>Welcome to the Photo Management App!</h2>
-	<p class="lead">You'll love managing your Photos with our application. Sign up!</p>
-</div>
-
 <div class="row">
+	<div class="jumbotron">
+		<h2>Welcome to the Photo Management App!</h2>
+		<p class="lead">You'll love managing your Photos with our application. Sign up!</p>
+	</div>
+
 	<div class="plans clearfix">
-		<div class="col-lg-3 col-lg-offset-3 plan">
-			<h2>Premium Plan</h2>
-			<div class="price pull-right">
-				Price: $10
-			</div>
-
+		<div class="col-lg-12 plan">
 			<div class="features">
-				<ul>
-					<li>Unlimited Image Uploads</li>
-					<li>Responsive design</li>
-					<li>Access anywhere</li>
-				</ul>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="feature">
+							<i class="fa fa-picture-o" aria-hidden="true"></i>
+							<p>Unlimited Image Uploads</p>
+						</div>						
+					</div>
+					<div class="col-lg-4">
+						<div class="feature">
+							<i class="fa fa-arrows" aria-hidden="true"></i>
+							<p>Responsive Design</p>
+						</div>						
+					</div>
+					<div class="col-lg-4">
+						<div class="feature">
+							<i class="fa fa-money" aria-hidden="true"></i>
+							<p>Forever Free</p>
+						</div>						
+					</div>
+				</div>
+
+				<p><%= link_to 'Sign Up Now', new_user_registration_path, class: 'btn btn-primary sign-up' %></p>
 			</div>
-
-			<p><%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %></p>
-		</div>
-
-		<div class="col-lg-3 plan">	
-			<h2>Amaze Plan</h2>
-			<div class="price pull-right">
-				Price: $20
-			</div>
-
-			<div class="features">
-				<ul>
-					<li>Unlimited Image Uploads</li>
-					<li>Responsive design</li>
-					<li>Access anywhere</li>
-					<li class='extra'>Unlimited projects</li>
-				</ul>
-			</div>
-
-			<p><%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %></p>
 		</div>
 	</div>
 </div>
